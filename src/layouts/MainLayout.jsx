@@ -1,16 +1,11 @@
-import { Link, Outlet } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
+import { Navbar } from '../components'
 
 function MainLayout() {
   return (
     <div>
       <h3>To do app</h3>
-      <div>
-        <Link to="/">Home</Link>
-        <Link to="/create">Create</Link>
-        <Link to="/detail/1">Detail</Link>
-        <Link to="/update/1">Update</Link>
-        <Link to="/auth/login">Login</Link>
-      </div>
+      <Navbar />
       <Outlet></Outlet>
     </div>
   )
